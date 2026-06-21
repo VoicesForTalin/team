@@ -45,3 +45,18 @@ button:hover{
   background:#333;
   transform:scale(1.05);
 }
+
+.card{
+  background:white;
+  margin:20px auto;
+  padding:20px;
+  width:80%;
+  max-width:500px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+audio{
+  width:100%;
+  margin-top:10px;
+}
