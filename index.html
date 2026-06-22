@@ -3,26 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Fan Voices For Talin</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    overflow:hidden;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.hero img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.1)
+    );
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.content h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:90px;
+    letter-spacing:8px;
+    margin-bottom:10px;
+}
+
+.content h2{
+    font-size:18px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.content p{
+    max-width:600px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.enter-btn{
+    text-decoration:none;
+    color:white;
+    border:2px solid white;
+    padding:15px 50px;
+    font-size:18px;
+    letter-spacing:3px;
+    transition:0.4s;
+    backdrop-filter:blur(5px);
+}
+
+.enter-btn:hover{
+    background:white;
+    color:black;
+    transform:scale(1.08);
+}
+</style>
 </head>
+
 <body>
+
 <section class="hero">
+
 <img src="images/IMG_0512.jpeg" alt="Talin">
+
 <div class="content">
 <h1>TALIN</h1>
+
 <h2>FAN VOICES FOR TALIN'S BIRTHDAY</h2>
+
 <p>
 A special collection of birthday wishes
 from fans around the world.
 </p>
+
 <a href="voices.html" class="enter-btn">
 ENTER
 </a>
+
 </div>
 </section>
+
 </body>
 </html>
