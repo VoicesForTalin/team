@@ -3,120 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fan Voices For Talin</title>
-
+<title>Team TLG</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-
 body{
-    font-family:'Montserrat',sans-serif;
+font-family:'Montserrat',sans-serif;
+overflow:hidden;
+background:#000;
 }
-
 .hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
+position:relative;
+width:100%;
+height:100vh;
+overflow:hidden;
 }
-
 .hero img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
 }
-
 .hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,0.85),
-        rgba(0,0,0,0.25),
-        rgba(0,0,0,0.1)
-    );
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(
+circle,
+rgba(0,0,0,0) 40%,
+rgba(0,0,0,0.55) 100%
+),
+linear-gradient(
+to top,
+rgba(0,0,0,0.85),
+rgba(0,0,0,0.25),
+rgba(0,0,0,0.05)
+);
 }
-
 .content{
-    position:relative;
-    z-index:2;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    padding:20px;
+position:relative;
+z-index:2;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
 }
-
 .content h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:90px;
-    letter-spacing:8px;
-    margin-bottom:10px;
+font-family:'Cormorant Garamond',serif;
+font-size:110px;
+font-weight:600;
+letter-spacing:10px;
+margin-bottom:10px;
+text-shadow:0 8px 25px rgba(0,0,0,.4);
 }
-
 .content h2{
-    font-size:18px;
-    letter-spacing:4px;
-    margin-bottom:20px;
+font-size:16px;
+font-weight:300;
+letter-spacing:6px;
+margin-bottom:20px;
 }
-
 .content p{
-    max-width:600px;
-    line-height:1.8;
-    margin-bottom:35px;
+max-width:650px;
+line-height:1.9;
+font-size:16px;
+margin-bottom:40px;
 }
-
 .enter-btn{
-    text-decoration:none;
-    color:white;
-    border:2px solid white;
-    padding:15px 50px;
-    font-size:18px;
-    letter-spacing:3px;
-    transition:0.4s;
+display:inline-block;
+text-decoration:none;
+color:white;
+padding:18px 75px;
+font-size:16px;
+letter-spacing:6px;
+border-radius:60px;
+border:1px solid rgba(255,255,255,.6);
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+box-shadow:
+0 8px 25px rgba(0,0,0,.35),
+0 0 25px rgba(255,255,255,.15);
+transition:all .4s ease;
 }
-
 .enter-btn:hover{
-    background:white;
-    color:black;
-    transform:scale(1.08);
+transform:translateY(-4px) scale(1.05);
+background:white;
+color:black;
+box-shadow:
+0 15px 40px rgba(255,255,255,.35);
+}
+@media(max-width:768px){
+.content h1{
+font-size:72px;
+letter-spacing:6px;
+}
+.content h2{
+font-size:13px;
+}
+.content p{
+font-size:14px;
+padding:0 10px;
+}
+.enter-btn{
+padding:16px 55px;
+font-size:14px;
+}
 }
 </style>
 </head>
-
 <body>
-
 <section class="hero">
-
-    <img src="IMG_0512.jpeg" alt="Talin">
-
-    <div class="content">
-        <h1>TALIN</h1>
-        <h2>FAN VOICES FOR TALIN'S BIRTHDAY</h2>
-
-        <p>
-            A special collection of birthday wishes
-            from fans around the world.
-        </p>
-
-        <a href="voices.html" class="enter-btn">ENTER</a>
-    </div>
-
+<img src="IMG_0512.jpeg" alt="Team TLG">
+<div class="content">
+<h1>TEAM TLG</h1>
+<h2>FAN VOICES FOR TALIN'S BIRTHDAY</h2>
+<p>
+A special collection of birthday wishes
+from fans around the world.
+</p>
+<a href="voices.html" class="enter-btn">
+ENTER
+</a>
+</div>
 </section>
-
 </body>
 </html>
